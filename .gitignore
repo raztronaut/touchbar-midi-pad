@@ -1,0 +1,52 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+*.swp
+*~.nib
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+*.moviedata
+*.xcscmblueprint
+*.xccheckout
+*.ipex
+
+# XcodeGen
+*.xcodeproj
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Bundle artifacts
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# Other
+DerivedData/
+.agent/
+.docs/

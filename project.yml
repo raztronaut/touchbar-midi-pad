@@ -1,0 +1,64 @@
+name: Sleek
+packages:
+  OpenMultitouchSupport:
+    url: https://github.com/KrishKrosh/OpenMultitouchSupport
+    from: 1.0.12
+targets:
+  Sleek:
+    type: application
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: Sources/SleekApp.swift
+      - path: Sources/UI
+      - path: Sources/Models
+      - path: Sources/Managers
+      - path: Sources/Audio
+      - path: Sources/Resources
+        excludes: ["Samples"]
+        buildPhase: resources
+      - path: Sources/Resources/Samples
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: OpenMultitouchSupport
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.razisyed.sleek
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        com.apple.security.app-sandbox: NO
+        INFOPLIST_KEY_CFBundleDisplayName: "Sleek"
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+
+  SleekTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources: [Tests/MagicMidiTests]
+    dependencies:
+      - target: Sleek
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.razisyed.sleek.tests
+schemes:
+  Sleek:
+    build:
+      targets:
+        Sleek: all
+        SleekTests: [test]
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - SleekTests
+    run:
+      config: Debug
+    archive:
+      config: Release
