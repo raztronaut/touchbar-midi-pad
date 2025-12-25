@@ -2,6 +2,10 @@
 
 Sleek is a modern, high-performance macOS application built with SwiftUI and clean architecture principles. It features a robust audio engine for sample playback and sleek, native-compliant UI.
 
+## Inspiration
+
+This project was inspired by [@KrishRShah](https://x.com/KrishRShah) and his work showcased in this tweet: [https://x.com/KrishRShah/status/1999576120878883287](https://x.com/KrishRShah/status/1999576120878883287).
+
 ## Features
 
 - **Modern UI**: Built entirely with SwiftUI, following the latest macOS design guidelines (unified title bar, sidebar).
