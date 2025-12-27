@@ -6,7 +6,7 @@ import OSLog
 class PadGridViewModel: ObservableObject {
     @Published var pads: [PadModel]
     @Published var isPoweredOn: Bool = true // Default ON
-    @Published var useSimpleVisuals: Bool = false // Toggle for "Simple" vs "Excessive" visuals
+    @Published var useExcessiveVisuals: Bool = false // Toggle for "Excessive" visuals (Default OFF)
     
     private let audioEngine = AudioEngine.shared
     private let touchManager = TouchManager.shared

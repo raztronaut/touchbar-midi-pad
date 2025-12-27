@@ -58,6 +58,16 @@ Run tests via Xcode or command line:
 xcodebuild test -scheme Sleek -destination 'platform=macOS'
 ```
 
+## Distribution
+
+To create a distributable `.dmg` installer:
+
+1.  **Run the creation script**:
+    ```bash
+    ./scripts/create_dmg.sh
+    ```
+    This command will build the app in Release mode and generate `Sleek_Installer.dmg` in the project root.
+
 ## Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.

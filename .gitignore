@@ -50,3 +50,9 @@ playground.xcworkspace
 DerivedData/
 .agent/
 .docs/
+
+# Build Artifacts
+build/
+*.dmg
+*.profraw
+default.profraw
