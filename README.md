@@ -2,9 +2,16 @@
 
 Sleek is a modern, high-performance macOS application built with SwiftUI and clean architecture principles. It features a robust audio engine for sample playback and sleek, native-compliant UI.
 
-## Inspiration
+## inspiration
 
 This project was inspired by [@KrishRShah](https://x.com/KrishRShah) and his work showcased in this tweet: [https://x.com/KrishRShah/status/1999576120878883287](https://x.com/KrishRShah/status/1999576120878883287).
+
+## Download
+
+You can download the latest version of Sleek from our [Releases page](https://github.com/raztronaut/touchbar-midi-pad/releases/latest).
+1. Download `Sleek_Installer.dmg`.
+2. Open the DMG file.
+3. Drag "Sleek" into your Applications folder.
 
 ## Features
 
